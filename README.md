@@ -3,7 +3,9 @@ Super simple Vagrant box to experiment with Docker.
 
 This Vagrant box lets you experiment with Docker in a clean box without having to go through the hassle of installing docker over and over again.
 
-The ```vagrant``` user is added to the ```docker``` group so you don't have to put ```sudo``` in front of all your ```docker``` commands.
+The provision script follows the intallation procedure as documented on https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/.
+
+As post installation steps, the ```vagrant``` user is added to the ```docker``` group so you don't have to put ```sudo``` in front of all your ```docker``` commands. Also, the docker daemon is configured to be started at boot.
 
 Make sure you have Vagrant and Oracle Virtualbox installed on your machine. Then, clone this repository and get started with:
 
